@@ -1,0 +1,4 @@
+Admin Paneli Giriş;
+Kullanıcı adı : emes24
+Parola 	      : admin1es
+( Tbl_Dershane_Admin tablosundan da ulaşılabilir )

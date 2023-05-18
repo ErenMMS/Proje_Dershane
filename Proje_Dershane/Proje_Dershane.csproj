@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{471E4CBA-A186-4CB2-8E83-4226B7181D3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proje_Dershane</RootNamespace>
+    <AssemblyName>Proje_Dershane</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DershaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet37.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet38.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet39.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet401.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet401.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet411.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet411.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet421.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet421.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet45.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet46.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet47.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DershaneDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DershaneDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DersKayitBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersKayitBilgi.Designer.cs">
+      <DependentUpon>DersKayitBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciBilgi.Designer.cs">
+      <DependentUpon>OgrenciBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEklemeDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciEklemeDurum.Designer.cs">
+      <DependentUpon>OgrenciEklemeDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciKayit.Designer.cs">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenBilgi.Designer.cs">
+      <DependentUpon>OgretmenBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenEklemeDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenEklemeDurum.Designer.cs">
+      <DependentUpon>OgretmenEklemeDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenKayit.Designer.cs">
+      <DependentUpon>OgretmenKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VeliBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliBilgi.Designer.cs">
+      <DependentUpon>VeliBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeliEklemeDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliEklemeDurum.Designer.cs">
+      <DependentUpon>VeliEklemeDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeliKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliKayit.Designer.cs">
+      <DependentUpon>VeliKayit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DersKayitBilgi.resx">
+      <DependentUpon>DersKayitBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciBilgi.resx">
+      <DependentUpon>OgrenciBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciEklemeDurum.resx">
+      <DependentUpon>OgrenciEklemeDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciKayit.resx">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenBilgi.resx">
+      <DependentUpon>OgretmenBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenEklemeDurum.resx">
+      <DependentUpon>OgretmenEklemeDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenKayit.resx">
+      <DependentUpon>OgretmenKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VeliBilgi.resx">
+      <DependentUpon>VeliBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeliEklemeDurum.resx">
+      <DependentUpon>VeliEklemeDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeliKayit.resx">
+      <DependentUpon>VeliKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DershaneDataSet.xsc">
+      <DependentUpon>DershaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet.xss">
+      <DependentUpon>DershaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet1.xsc">
+      <DependentUpon>DershaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet1.xss">
+      <DependentUpon>DershaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet10.xsc">
+      <DependentUpon>DershaneDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet10.xss">
+      <DependentUpon>DershaneDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet11.xsc">
+      <DependentUpon>DershaneDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet11.xss">
+      <DependentUpon>DershaneDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet12.xsc">
+      <DependentUpon>DershaneDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet12.xss">
+      <DependentUpon>DershaneDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet13.xsc">
+      <DependentUpon>DershaneDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet13.xss">
+      <DependentUpon>DershaneDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet14.xsc">
+      <DependentUpon>DershaneDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet14.xss">
+      <DependentUpon>DershaneDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet15.xsc">
+      <DependentUpon>DershaneDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet15.xss">
+      <DependentUpon>DershaneDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet16.xsc">
+      <DependentUpon>DershaneDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet16.xss">
+      <DependentUpon>DershaneDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet17.xsc">
+      <DependentUpon>DershaneDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet17.xss">
+      <DependentUpon>DershaneDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet18.xsc">
+      <DependentUpon>DershaneDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet18.xss">
+      <DependentUpon>DershaneDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet19.xsc">
+      <DependentUpon>DershaneDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet19.xss">
+      <DependentUpon>DershaneDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet2.xsc">
+      <DependentUpon>DershaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet2.xss">
+      <DependentUpon>DershaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet20.xsc">
+      <DependentUpon>DershaneDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet20.xss">
+      <DependentUpon>DershaneDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet21.xsc">
+      <DependentUpon>DershaneDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet21.xss">
+      <DependentUpon>DershaneDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet22.xsc">
+      <DependentUpon>DershaneDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet22.xss">
+      <DependentUpon>DershaneDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet23.xsc">
+      <DependentUpon>DershaneDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet23.xss">
+      <DependentUpon>DershaneDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet24.xsc">
+      <DependentUpon>DershaneDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet24.xss">
+      <DependentUpon>DershaneDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet25.xsc">
+      <DependentUpon>DershaneDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet25.xss">
+      <DependentUpon>DershaneDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet26.xsc">
+      <DependentUpon>DershaneDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet26.xss">
+      <DependentUpon>DershaneDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet27.xsc">
+      <DependentUpon>DershaneDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet27.xss">
+      <DependentUpon>DershaneDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet28.xsc">
+      <DependentUpon>DershaneDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet28.xss">
+      <DependentUpon>DershaneDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet29.xsc">
+      <DependentUpon>DershaneDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet29.xss">
+      <DependentUpon>DershaneDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet3.xsc">
+      <DependentUpon>DershaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet3.xss">
+      <DependentUpon>DershaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet30.xsc">
+      <DependentUpon>DershaneDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet30.xss">
+      <DependentUpon>DershaneDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet31.xsc">
+      <DependentUpon>DershaneDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet31.xss">
+      <DependentUpon>DershaneDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet32.xsc">
+      <DependentUpon>DershaneDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet32.xss">
+      <DependentUpon>DershaneDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet33.xsc">
+      <DependentUpon>DershaneDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet33.xss">
+      <DependentUpon>DershaneDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet34.xsc">
+      <DependentUpon>DershaneDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet34.xss">
+      <DependentUpon>DershaneDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet35.xsc">
+      <DependentUpon>DershaneDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet35.xss">
+      <DependentUpon>DershaneDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet36.xsc">
+      <DependentUpon>DershaneDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet36.xss">
+      <DependentUpon>DershaneDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet37.xsc">
+      <DependentUpon>DershaneDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet37.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet37.xss">
+      <DependentUpon>DershaneDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet38.xsc">
+      <DependentUpon>DershaneDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet38.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet38.xss">
+      <DependentUpon>DershaneDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet39.xsc">
+      <DependentUpon>DershaneDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet39.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet39.xss">
+      <DependentUpon>DershaneDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet4.xsc">
+      <DependentUpon>DershaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet4.xss">
+      <DependentUpon>DershaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet401.xsc">
+      <DependentUpon>DershaneDataSet401.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet401.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet401.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet401.xss">
+      <DependentUpon>DershaneDataSet401.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet411.xsc">
+      <DependentUpon>DershaneDataSet411.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet411.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet411.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet411.xss">
+      <DependentUpon>DershaneDataSet411.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet421.xsc">
+      <DependentUpon>DershaneDataSet421.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet421.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet421.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet421.xss">
+      <DependentUpon>DershaneDataSet421.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet43.xsc">
+      <DependentUpon>DershaneDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet43.xss">
+      <DependentUpon>DershaneDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet44.xsc">
+      <DependentUpon>DershaneDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet44.xss">
+      <DependentUpon>DershaneDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet45.xsc">
+      <DependentUpon>DershaneDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet45.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet45.xss">
+      <DependentUpon>DershaneDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet46.xsc">
+      <DependentUpon>DershaneDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet46.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet46.xss">
+      <DependentUpon>DershaneDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet47.xsc">
+      <DependentUpon>DershaneDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet47.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet47.xss">
+      <DependentUpon>DershaneDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet5.xsc">
+      <DependentUpon>DershaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet5.xss">
+      <DependentUpon>DershaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet6.xsc">
+      <DependentUpon>DershaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet6.xss">
+      <DependentUpon>DershaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet7.xsc">
+      <DependentUpon>DershaneDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet7.xss">
+      <DependentUpon>DershaneDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet8.xsc">
+      <DependentUpon>DershaneDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet8.xss">
+      <DependentUpon>DershaneDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet9.xsc">
+      <DependentUpon>DershaneDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DershaneDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DershaneDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DershaneDataSet9.xss">
+      <DependentUpon>DershaneDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
