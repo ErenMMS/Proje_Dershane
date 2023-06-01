@@ -1,6 +1,6 @@
 # Proje_Dershane
-Dershane Otomasyon Sistemi
+School Otomation System
 
-Proje yerel veritabanı kullanır. Program içerisinde "SqlConnection" bağlantılarını kendi veri kaynağınız olarak değiştirmeniz gereklidir.
+The project uses local database. You Should change the connections of "SqlConnection" as your data source.
 
 Data Source=DESKTOP-Q3AJI4H ===> Data Source = YourDataSourceName
